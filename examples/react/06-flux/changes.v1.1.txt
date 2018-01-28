@@ -1,0 +1,20 @@
+Change summary: Set up Flux pattern
+Behavior: Intermediate step - displays "Hello from Flux"
+
+File: webpack.config.v1.0.js > webpack.config.v1.1.js
+Line 5: update entry point version
+
+File: src/root.v1.0.js > src/root.v1.1.js 
+Lines 
+- 11: import AppContainer
+- 15-16: render AppContainer
+
+New Files:
+src/containers/AppContainer.v1.1.js
+- Create a Flux container, passing in stores
+src/views/AppView.v1.1.js
+- display layer
+src/data/TodoActionTypes.v1.1
+- abstract layer between actions & data
+src/data/TodoDispatcher.v1.1
+- abstract layer between actions & data

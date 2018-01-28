@@ -1,0 +1,19 @@
+Change summary: Enable navigation through move history
+Method: Create step number data and use as index into history array
+Reason: Functional requirement
+Behavior: 
+- Clicking on buttons in sidebar changes board as it looked at that point
+- Clicking game board results in new history
+
+Files: tictactoe.v7.1.html > tictactoe.v7.2.html
+Lines: 
+- 11: change game version to v7.2
+
+Files: tictactoe.v7.1.game.js > tictactoe.v7.2.game.js
+Lines: 
+- 7: add step number to state constructor
+- 33: truncate history based on step number
+- 48: update step number due to click
+- 50-59: add function to set step number
+- 62: get current data based on step number
+- 70: add button to connect user input to set step number function

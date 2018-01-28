@@ -1,0 +1,16 @@
+Change summary: Handle click inside Board
+Method: Copy squares out of state; modify (mutate) copy; set state to copy
+Reason: Avoiding mutations in state has many performance & stability benefits
+Behavior: Clicking in a cell causes 'X' to appear
+
+Files: tictactoe.v5.js > tictactoe.v5.1.js
+Lines: 
+- 19-22
+  - remove console log
+  - copy squares from state into local variable
+  - set local variable to new value
+  - call setState to replace squares with local variable
+
+Files: tictactoe.v5.html > tictactoe.v5.1.html
+Lines: 
+- 9: change script tag to v5.1

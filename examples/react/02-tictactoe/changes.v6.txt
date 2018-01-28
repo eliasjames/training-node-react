@@ -1,0 +1,16 @@
+Change summary: Create data point to track player turn
+Method: Add a property to state; update property in click handler; display value in status
+Reason: Funcitonal requirement
+Behavior: Each click causes player turn to alternate
+
+Files: tictactoe.v5.2.js > tictactoe.v6.js
+Lines: 
+- 14: add a property to initial state containing boolean to represent player turn
+- 19-24
+  - set copy of squares array to X or O based on player boolean
+  - flip value of player boolean in setState
+- 38: update status indicator based on player boolean
+
+Files: tictactoe.v5.2.html > tictactoe.v6.html
+Lines: 
+- 9: change script tag to v6

@@ -1,0 +1,24 @@
+Change summary:
+Behavior:
+
+File: ../04-build/tictactoe.v7/package.json > ./package.json
+Line 24: add react-router-dom
+
+File: ../04-build/tictactoe.v7/tictactoe.v1.css > ./tictactoe.v1.css
+Lines 51-59: style nav bar links
+
+File: ../04-build/tictactoe.v7/tictactoe.v7.load.js > ./tictactoe.v7.load.js
+Lines 
+- 3-4: import BrowserRouter, add module App, remove module Game
+- 8-10: add BrowserRouter and Game to render
+
+File: webpack.config.js 
+Lines 5-7: set historyApiFallback to serve html file by default
+
+New Files:
+tictactoe.v7.2.app.js
+- Top-level, wrapper layer
+tictactoe.v7.2.header.js
+- Nav bar with links
+tictactoe.v7.2.main.js
+- Main content area, switching based on route

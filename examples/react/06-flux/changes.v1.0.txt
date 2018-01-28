@@ -1,0 +1,2 @@
+Change summary: Hello World carryover from 04-build
+Behavior: Webpack uses Babel + presets to compile React

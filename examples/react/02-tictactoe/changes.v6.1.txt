@@ -1,0 +1,15 @@
+Change summary: Detect winner
+Method: Add winner detection function, call from Board.render
+Reason: Functional requirement
+Behavior: On three in a row, status displays winner. Note subsequent clicks are not prevented ( next change )
+
+Files: tictactoe.v6.js > tictactoe.v6.1.js
+Lines: 
+- 18-36: add winner detection function
+- 58-64
+	- check winner detection function
+	- set status variable based on result
+
+Files: tictactoe.v6.html > tictactoe.v6.1.html
+Lines: 
+- 9: change script tag to v6.1

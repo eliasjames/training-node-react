@@ -1,0 +1,11 @@
+Change summary: Add click handler to JSX element
+Method: Add click handler to JSX element
+Reason: Event handlers are how components communicate with the user and with parent components (coming soon)
+
+Files: tictactoe.v2.js > tictactoe.v3.js
+Lines: 
+- 4: add onClick attribute to button
+
+Files: tictactoe.v2.html > tictactoe.v3.html
+Lines: 
+- 9: change script tag to v3

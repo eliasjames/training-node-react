@@ -1,0 +1,16 @@
+Change summary: Make hardcoded rows dynamic
+Method: Remove repeated calls to renderSquare, replace with nested loops 
+Reason: Repeated calls are time consuming to edit and prone to bugs
+Behavior: 
+- browser will show status ("Next player") and empty board
+- console will show error "Each child in iterator..."; next version will fix
+
+Files: tictactoe.v1.js > tictactoe.v1.1.js
+Lines: 
+- 17-26
+  - declare variables to store board and rows
+  - loop three times to call renderSquare and add results to rows array
+  - loop three times to add rows array to board array
+- 22-36
+  - remove three sections with class board-row
+  - replace with JSX brackets containing board variable

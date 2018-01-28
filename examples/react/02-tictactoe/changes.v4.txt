@@ -1,0 +1,17 @@
+Change summary: Add state to Square
+Method: Init state in constructor; change click handler to modify state; display state in button
+Reason: State is data internal to components, as opposed to props which are received from parents
+Behavior: clicking on a cell will cause the cell to display 'X'
+
+Files: tictactoe.v3.js > tictactoe.v4.js
+Lines: 
+- 2-8: 
+  - add constructor method
+    - call super, passing props
+    - set initial state
+- 11-12
+  - change props to state
+
+Files: tictactoe.v3.html > tictactoe.v4.html
+Lines: 
+- 9: change script tag to v4

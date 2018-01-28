@@ -1,0 +1,15 @@
+Change summary: Prepare to lift state out of Board
+Method: Create Game component above Board
+Reason: Needed to lift state in next example
+Behavior: No change
+
+Files: tictactoe.v6.3.html > tictactoe.v6.4.html
+Lines: 
+- 11: add script tag to game file
+- 11: change script tag to 6.4 load file
+
+Files:  tictactoe.v6.3.load.js > tictactoe.v6.4.load.js
+Lines: 
+- 3: change Board to Game
+
+New File: tictactoe.v6.4.game.js

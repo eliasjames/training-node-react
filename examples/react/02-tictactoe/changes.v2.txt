@@ -1,0 +1,21 @@
+Change summary: Pass ID into Square
+Method: Add attributes to JSX elements which are then available inside component
+Reason: Props is the React feature for communicating from a parent component to a child
+Files: tictactoe.v1.1.js > tictactoe.v2.js
+Lines: 
+- 5: replace TODO with 'this.props.value' for demo/display purposes
+- 12-13: 
+  - add argument 'i' to renderSquare
+  - add value and key attributes to Square, passing 'i' 
+- 19-20:
+  - declare a variable to hold square sequence across rows
+- 22-26:
+  - move row loop inside board loop (before adding row to board)
+  - pass square sequence variable as argument to renderSquare
+  - increment square sequence variable inside row loop
+- 28:
+  - reset row variable before next board loop
+
+Files: tictactoe.v1.1.html > tictactoe.v2.html
+Lines: 
+- 9: change script tag to v2

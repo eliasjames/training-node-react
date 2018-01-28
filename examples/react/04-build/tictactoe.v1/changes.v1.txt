@@ -1,0 +1,22 @@
+Change summary: Switch to Webpack build
+Behavior: 'npm install' followed by 'npm run webpack' should 
+  - start a server at localhost:8080 and 
+  - output file dist/bundle.js in this directory
+
+Files:  01-intro/01-hello-world.html > 04-build/tictactoe.v1/tictactoe.v1.html
+Lines: 
+- 6-8: replace script tags with one pointing to dist/bundle
+- 10-19: remove script tag
+
+New Files
+.babelrc
+.changes.v1.txt.swp
+.webpack.config.js.swp
+changes.v1.txt
+dist
+node_modules
+package.json
+tictactoe.v1.css
+tictactoe.v1.html
+tictactoe.v1.js
+webpack.config.js

@@ -1,0 +1,11 @@
+Change summary: Exit click handler on non-clickable conditions
+Method: Check winner & square inside click handler & exit if needed
+Reason: Functional requirement
+Behavior: Clicking after a win or on an occupied square does nothing
+
+Files: tictactoe.v6.1.js > tictactoe.v6.2.js
+Lines: 
+
+Files: tictactoe.v6.1.html > tictactoe.v6.2.html
+Lines: 
+- 9: change script tag to v6.2

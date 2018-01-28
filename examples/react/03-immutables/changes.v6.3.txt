@@ -1,0 +1,13 @@
+Change summary: Break up components
+Method: Split tictactoe components into separate files
+Reason: Organization best practice
+Behavior: No change
+
+Files: tictactoe.v6.2.html > tictactoe.v6.3.html
+Lines: 
+- 9-11: change/add script tags to point to separate files
+
+Files: tictactoe.v6.2.js
+Lines: 
+- 1-8: remove Square and move to tictactoe.v6.3.square.js
+- 81-105: remove render conditions/listeners and move to tictactoe.v6.3.load.js

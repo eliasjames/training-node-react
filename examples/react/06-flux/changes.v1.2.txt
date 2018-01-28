@@ -1,0 +1,29 @@
+Change summary: Create & read data through stores
+Behavior: 3 Todos displayed (not yet dynamic)
+
+File: webpack.config.v1.1.js > webpack.config.v1.2.js
+Line 5: update entry point version
+
+File: src/root.v1.1.js > src/root.v1.2.js 
+Lines 
+- 11: change AppContainer version
+- 13-16: temporarily create Todos here
+
+File: src/containers/AppContainer.v1.1.js > src/containers/AppContainer.v1.2.js 
+Lines 
+- 1-3: change AppView and TodoStore versions
+
+File: src/views/AppView.v1.1.js > src/views/AppView.v1.2.js
+Lines 
+- 3-71: replace Hello World with nested components
+
+File: src/data/TodoStore.v1.1.js > src/data/TodoStore.v1.2.js 
+Lines 
+- 4-6: import Counter and Todo
+- 18-29: if todo has text, increment counter and set state
+
+New Files:
+src/Counter.js
+- basic counter (increment/decrement)
+src/data/Todo.v1.2.js
+- basic atom of state data

@@ -1,0 +1,20 @@
+Change summary: Store moves as history
+Method: Create an array in game; store squares on user input; show list of moves
+Reason: Functional requirement
+Behavior: Every click causes append to a list
+
+Files: tictactoe.v7.html > tictactoe.v7.1.html
+Lines: 
+- 9-12: change game version to v7.1
+
+Files: tictactoe.v7.game.js > tictactoe.v7.1.game.js 
+Lines: 
+- 5-7: make squares an element inside an array called history 
+- 31-36: get latest squares data from history 
+- 37-46: concatenate history (to avoid mutation) and use to set state
+- 52-64 (44 before additions):
+	- get latest squares data from history 
+	- change winner calculation to use latest squares
+	- create li markup based on history
+- 77 (57 before): use latest squares
+- 83 (63 before): display li markup

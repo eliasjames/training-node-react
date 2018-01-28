@@ -1,0 +1,16 @@
+Change summary: Change Square into functional component
+Method: Return JSX from function without creating class
+Reason: Easier to write, maintain & React can better optimize
+Behavior: Refactor - no change
+
+Files: tictactoe.v5.1.js > tictactoe.v5.2.js
+Lines: 
+- 1-8
+  - change class to function, remove React.Component, add props argument to function
+  - remove render method
+  - return button JSX
+  - change references from this.props to props (from the function arguments)
+
+Files: tictactoe.v5.1.html > tictactoe.v5.2.html
+Lines: 
+- 9: change script tag to v5.2

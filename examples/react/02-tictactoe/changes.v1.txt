@@ -1,0 +1,23 @@
+Change summary: Starter code
+Method: Construct board using nested components, functional components
+Reason: Fundamental patterns for React
+Behavior: Browser will show status ("Next player") and empty board
+
+New File: tictactoe.v1.js 
+Lines: 
+- 1-9
+  - create React component representing Square
+  - add render method returning button element with attribute className
+- 11-40
+  - create React component representing Board 
+  - add renderSquare method returning Square
+  - add render method 
+    - set status message
+    - return board markup using status message & renderSquare
+- 43-56
+  - add function calling render method of ReactDOM, passing Board
+  - call function when document is ready
+
+New File: tictactoe.v1.html
+- 1-15: Basic HTML markup
+- 13: element with ID 'root'

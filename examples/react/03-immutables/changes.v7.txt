@@ -1,0 +1,20 @@
+Change summary: Lift state from Board to Game
+Method: Move related functions, change state to props
+Reason: Allows board to change states. Will enable undo/redo/time travel in next examples
+Behavior: Status shows up next to board due to CSS needed for next examples. No change otherwise
+
+Files: tictactoe.v6.4.html > tictactoe.v7.html
+Lines: 
+- 9-12: change versions to v7
+- 14: add favicon (optional)
+
+Files: tictactoe.v6.3.board.js > tictactoe.v7.board.js 
+Lines: 
+yy- 2-41: delete constructor, calculateWinner, handleClick (move to .game)
+- 46-47 (6-7 after delete): get squares and handleClick from props
+
+Files: tictactoe.v6.3.game.js > tictactoe.v7.game.js 
+Lines: 
+- 2-41: add constructor, calculateWinner, handleClick (from .board)
+- 56-59: add squares and handleClick to Board
+- 62: uncomment status

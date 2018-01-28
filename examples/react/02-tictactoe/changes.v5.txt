@@ -1,0 +1,25 @@
+Change summary: Lift state from Square to Board
+Method: Store data about Squares inside Board; pass data from Board to Squares as needed
+Reason: "One way data flow" means children always stay in sync
+Behavior: Clicking on a cell will cause console log ( no cell display )
+
+Files: tictactoe.v4.js > tictactoe.v5.js
+Lines: 
+- 2: delete constructor from Square
+- 4-5
+  - change button onClick to call function passed through props
+  - change button contents from state to props
+- 12-17
+  - add constructor
+  - call super, passing props
+  - set initial state to empty array
+- 19-21
+  - add click handler method with console log
+- 24-30
+  - break Square into multiple lines, by wrapping in expression ( parentheses )
+  - pass value the square data from the array in state
+  - add a new element property to pass the click handler function to Square
+
+Files: tictactoe.v4.html > tictactoe.v5.html
+Lines: 
+- 9: change script tag to v5
