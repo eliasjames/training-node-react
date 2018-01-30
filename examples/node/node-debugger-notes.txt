@@ -1,0 +1,33 @@
+Node Debugger
+
+Two elements are necessary for debugging
+- start a Node process running with flag for interactive mode
+- connect to the debug process with a client (built-in or 3rd party)
+- two different interactive modes
+  - 'debug' (version 0 through 7)
+  - 'inspect' (version 8+)
+
+CLI client
+- built-in client can either 
+  - start the utility and connect to it, or
+  - connect to a previously running instance
+  - not a full-featured debugger, but simple step and inspection are possible
+  - see more commands: https://nodejs.org/api/debugger.html
+- version < 8
+  - start and connect: 'node debug path/to/my-script.js'
+  - connect to an existing process by its ID: 'node debug -p [PID]'
+- version > 8
+  - start and connect: 'node inspect path/to/my-script.js'
+  - connect to an existing process not supported (use inspect, below)
+
+Start a debugger process to connect CLI to
+- 'node --debug path/to/my-script.js'
+- starts process for connecting CLI debugger
+
+Start an inspector process to connect other clients
+- 'node --inspect path/to/my-script.js' (--inspect=9999 to specify port)
+- console output varies by version but will always include a websocket (ws) protocol URI
+- ...only=true&ws=127.0.0.1:9229/03827720-f0ea-4456-ae97-f3713f5e132f
+- note 'ws' followed by address (including random string after port)
+
+
