@@ -10,6 +10,7 @@ var copyPath = dir + '/' + copyFile;
 fs.mkdir( dir, function( err ) {
   if ( err && err.code !== 'EEXIST' ) {
     console.log( err );
+    process.exit();
   } else {
     fs.writeFile( opPath, 'initial file text', function( err ) {
       if ( !err ) {
@@ -24,6 +25,7 @@ fs.mkdir( dir, function( err ) {
         });
         cS.pipe( opWS );
         console.log( 'CounterStream written' );
+        process.exit();
       } else {
         console.log( err );
       }
