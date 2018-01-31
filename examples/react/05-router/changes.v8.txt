@@ -1,29 +1,26 @@
-Change summary:
-Behavior:
+Change summary: Add React Router to connect URL to app
+Behavior: Clicking on links causes display to change without page reload
+Prereqs: Execute 'npm run start' to launch webpack dev server before loading page at 
+  http://localhost:8080
 
 File: ../04-build/tictactoe.v7/package.json > ./package.json
 Line 24: add react-router-dom
 
-File: ../04-build/tictactoe.v7/tictactoe.v1.css > ./tictactoe.v1.1.css
+File: ../04-build/tictactoe.v7/tictactoe.v1.css > ./tictactoe.v1.css
 Lines 51-59: style nav bar links
 
-File: ../04-build/tictactoe.v7/tictactoe.v7.2.html > ./tictactoe.v8.html
-Line 7: change CSS version
-
-File: ../04-build/tictactoe.v7/tictactoe.v7.load.js > ./tictactoe.v8.load.js
+File: ../04-build/tictactoe.v7/tictactoe.v7.load.js > ./tictactoe.v7.load.js
 Lines 
 - 3-4: import BrowserRouter, add module App, remove module Game
 - 8-10: add BrowserRouter and Game to render
 
 File: webpack.config.js 
-Lines:
-- 5-7: set historyApiFallback to serve html file by default
-- 11: change version on entry point
+Lines 5-7: set historyApiFallback to serve html file by default
 
 New Files:
-tictactoe.v8.app.js
+tictactoe.v7.2.app.js
 - Top-level, wrapper layer
-tictactoe.v8.header.js
+tictactoe.v7.2.header.js
 - Nav bar with links
-tictactoe.v8.main.js
+tictactoe.v7.2.main.js
 - Main content area, switching based on route
