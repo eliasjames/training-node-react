@@ -5,8 +5,8 @@
   "main": "tictactoe.v1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch & webpack-dev-server",
-    "build": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
