@@ -1,7 +1,7 @@
 Change summary: Store moves as history
 Method: Create an array in game; store squares on user input; show list of moves
 Reason: Functional requirement
-Behavior: Every click causes append to a list
+Behavior: Every click causes an history item to be appended to a list
 
 Files: tictactoe.v7.html > tictactoe.v7.1.html
 Lines: 

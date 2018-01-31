@@ -17,4 +17,5 @@ Files: tictactoe.v6.3.game.js > tictactoe.v7.game.js
 Lines: 
 - 2-41: add constructor, calculateWinner, handleClick (from .board)
 - 56-59: add squares and handleClick to Board
+  - line 58: add square ID (called 'i') as an argument to arrow function
 - 62: uncomment status
