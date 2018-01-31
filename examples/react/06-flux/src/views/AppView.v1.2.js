@@ -33,16 +33,14 @@ function Main(props) {
                 type="checkbox"
                 checked={todo.complete}
                 onChange={
-                  // Empty function for now, we will implement this later.
-                  () => {}
+                  () => { props.onToggleTodo(todo.id); }
                 }
               />
               <label>{todo.text}</label>
               <button
                 className="destroy"
                 onClick={
-                  // Empty function for now, we will implement this later.
-                  () => {}
+                  () => { props.onDeleteTodo(todo.id); }
                 }
               />
             </div>
